@@ -1,0 +1,13 @@
+version: '3'
+
+
+volumes:
+  web_static_content:
+
+services:
+  web:
+    image: 'nginx:latest'
+    ports:
+      - '8888:80'
+    volumes:
+      - web_static_content:/usr/share/nginx/html:ro
