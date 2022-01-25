@@ -19,7 +19,7 @@ jobs:
     - name: build and deploy docker image to dockerhub
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: docker_workflows/workflow_custom_nginx_web_server
+        image: glitch2k/docker_workflows
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
